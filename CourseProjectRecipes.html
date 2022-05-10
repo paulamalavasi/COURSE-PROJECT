@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>What's for dinner?</title>
+        <link rel="stylesheet" href="CourseProject.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <script src="CouseProject.js"></script>
+	</head>
+	<body>
+		<main>
+            <div class="menu">       
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="CourseProjectRecipes.html">Recipes</a></li>
+                    <li><a href="CourseProjectInspiration.html">Inspiration</a></li>
+                    <li onclick ="whatsForDinner()"style="float:left"><a class="SiteName" href="#SomeName">What's for dinner?</a></li>
+                </ul>
+            </div>
+                <br>
+                <div class="allcontent">
+                    <div class="allRecipes">
+                        <button id="allRecipesButton"onclick="showAllRecipes()">All recipes</button>
+                    </div>
+                    <div class="filterButtons">
+                        <button onclick="showRecipes('rice')">rice</button>
+                        <button onclick="showRecipes('pasta')">pasta</button>
+                        <button onclick="showRecipes('wrap')">wrap</button>
+                        <button onclick="showRecipes('chicken')">chicken</button>
+                        <button onclick="showRecipes('salmon')">salmon</button>
+                        <button onclick="showRecipes('tuna')">tuna</button>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>      
+                        <div id="links">
+                            <div class="container chicken wrap"><a href="https://www.simplejoy.com/chicken-wrap/" target="_blank">Chicken wrap</a>
+                            </div>
+                            <div class="container tuna pasta"><a href="https://www.bbcgoodfood.com/recipes/tuna-pasta-bake/" target="_blank">Tuna pasta bake</a>
+                            </div>
+                            <div class="container chicken rice"><a href="https://www.bbcgoodfood.com/recipes/chicken-sweetcorn-egg-fried-rice" target="_blank">Chicken fried rice</a>
+                            </div>
+                            <div class="container salmon rice"><a href="https://www.bbcgoodfood.com/recipes/steamed-salmon-veg-rice-bowl" target="_blank">Salmon & veg rice bowl</a>
+                            </div>
+                            <div class="container tuna rice"><a href="https://www.theroastedroot.net/tuna-rice-casserole-low-fodmap/" target="_blank">Tuna rice casserole</a>
+                            </div>
+                            <div class="container salmon wrap"><a href="https://hungryhealthyhappy.com/salmon-wrap/" target="_blank">Salmon wrap</a>
+                            </div>
+                            <div class="container tuna wrap"><a href="https://thehealthyfoodie.com/tuna-wrap/" target="_blank">Tuna wrap</a>
+                            </div>
+                            <div class="container salmon pasta"><a href="https://www.bbcgoodfood.com/recipes/creamy-salmon-pasta" target="_blank">Creamy salmon pasta</a>
+                            </div>
+                            <div class="container chicken pasta"><a href="https://www.thechunkychef.com/one-pot-chicken-parmesan-pasta/" target="_blank">Chicken parmesan pasta</a>
+                            </div>
+                        
+                        </div>
+                       
+                </div>        
+                <footer>
+                    <div  id="contacts">
+                        <h3>Let's connect</h3>
+                            <a href="https://www.linkedin.com/in/paulamalavasi/" target="_blank">
+                                <img id="linkedin" alt="Linkedin" src="images/linkedin.png"/>
+                            </a>
+                            <a href="https://github.com/paulamalavasi" target="_blank">
+                                <img id="github" alt="GitHub" src="images/github.png" />
+                            </a>
+                    </div>
+                </footer>
+        </main>
+    </body>
+</html>
