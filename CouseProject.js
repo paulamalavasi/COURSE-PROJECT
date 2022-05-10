@@ -50,7 +50,7 @@ function whatsForDinner(){
             break;
     }
 }
-function showRecipes(typeChosen){
+function showRecipes(ingredient){
 
     var links = document.getElementById('links').getElementsByTagName('div');
 
@@ -58,7 +58,7 @@ function showRecipes(typeChosen){
     {
         var recipeDiv = links[i];
 
-        if(recipeDiv.classList.contains(typeChosen))
+        if(recipeDiv.classList.contains(ingredient))
         {
             
             recipeDiv.style.display = 'block';
