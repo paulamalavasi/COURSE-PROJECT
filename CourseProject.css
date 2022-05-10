@@ -94,6 +94,7 @@ button{
 button:hover{
       background-color: #111;
 }
+
 .allRecipes{
       flex-wrap: nowrap;
       width: 505px;
