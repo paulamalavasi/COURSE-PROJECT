@@ -39,12 +39,6 @@ body{
       border-radius: 10px;
       text-align: center;
 }
-/*#contacts img{
-      height: 40px;
-      width: 40px;
-      margin-left: 5px;
-      margin-right: 5px;
-}*/
 #linkedin{
       height: 35px;
       width: 35px;
@@ -70,6 +64,10 @@ footer{
       bottom: 0;
       width: 100%;
 }
+.quote{
+      color: #4D428F;
+      font-size: 20px;
+}
 .text{
       flex-wrap: nowrap;
       width: 500px;
@@ -77,8 +75,9 @@ footer{
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 10px;
-      text-align: center;
       margin-left: 420px;
+      text-align: justify;
+      text-justify: inter-word;
 }
 button{
       border: none;
@@ -92,9 +91,9 @@ button{
       font-size: 13pt;
 }
 button:hover{
-      background-color: #111;
+      background-color: #FF6600
+      ;
 }
-
 .allRecipes{
       flex-wrap: nowrap;
       width: 505px;
@@ -116,14 +115,10 @@ button:hover{
       margin-left: 15px;
       text-align: center;
 }
-/*.rice:hover {
-      background-color: #111;
-}*/
 .allcontent{  
       flex-wrap: nowrap;
       width: 500px;  
       margin: auto;
-width: 25%;
 }
 a:link{
       text-decoration: none;
@@ -138,4 +133,8 @@ a:hover{
 }
 a:active{
       text-decoration: none; 
+}
+
+.leftPosition {
+      float:left;
 }

@@ -1,10 +1,13 @@
 
 function whatsForDinner(){
     var mealBase = prompt ("What is your meal base? rice, wrap, pasta");
+
+    mealBase = mealBase.toLowerCase();
   
     switch (mealBase) {
         case "rice":
             var  mealProtein = prompt ("What is your meal protein? salmon, chicken, tuna");
+            mealProtein = mealProtein.toLowerCase();
 
             if (mealProtein =="salmon"){
                 window.open("https://www.bbcgoodfood.com/recipes/steamed-salmon-veg-rice-bowl/");
@@ -15,10 +18,13 @@ function whatsForDinner(){
             if (mealProtein =="tuna"){
                 window.open("https://www.theroastedroot.net/tuna-rice-casserole-low-fodmap/");
             }
+
+            
             break;
 
         case "wrap":
-            var mealProtein = prompt ("What is your meal protein? chicken, salmon, tuna");
+            var mealProtein = askMealProtein();
+            mealProtein = mealProtein.toLowerCase();
 
             if (mealProtein =="chicken"){
                 window.open("https://www.simplejoy.com/chicken-wrap/");
@@ -32,7 +38,8 @@ function whatsForDinner(){
             break;
 
         case "pasta":
-            var mealProtein = prompt ("What is your meal protein? tuna, chicken, salmon");
+            var mealProtein = askMealProtein();
+            mealProtein = mealProtein.toLowerCase();
 
             if (mealProtein =="tuna"){
                window.open("https://www.bbcgoodfood.com/recipes/tuna-pasta-bake/");
@@ -50,6 +57,12 @@ function whatsForDinner(){
             break;
     }
 }
+
+function askMealProtein(){
+     return  prompt ("What is your meal protein? chicken, salmon, tuna");
+
+}
+
 function showRecipes(ingredient){
 
     var links = document.getElementById('links').getElementsByTagName('div');
